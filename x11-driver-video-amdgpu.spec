@@ -33,3 +33,6 @@ x11-driver-video-amdgpu is the X.org driver for AMD Technologies.
 %makeinstall_std
 
 %files
+%{_libdir}/xorg/modules/drivers/amdgpu_drv.so
+%{_datadir}/X11/xorg.conf.d/10-amdgpu.conf
+%{_mandir}/man4/amdgpu.4.*
