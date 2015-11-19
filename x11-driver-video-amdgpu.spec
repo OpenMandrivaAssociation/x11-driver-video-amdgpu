@@ -12,6 +12,7 @@ BuildRequires:	pkgconfig(xorg-macros) >= 1.19
 BuildRequires:	pkgconfig(xextproto) >= 7.3.0
 BuildRequires:	pkgconfig(xorg-server) >= 1.18
 BuildRequires:	pkgconfig(gbm)
+BuildRequires:	pkgconfig(libudev)
 BuildRequires:	x11-proto-devel >= 7.7
 Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
 # (tpg) this is needed to get VDPAU works out of box
