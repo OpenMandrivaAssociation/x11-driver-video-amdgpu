@@ -1,7 +1,7 @@
 Summary:	X.org driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
 Version:	1.1.2
-Release:	1
+Release:	2
 Group:		System/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
