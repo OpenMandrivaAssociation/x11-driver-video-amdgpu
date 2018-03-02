@@ -10,7 +10,7 @@ BuildRequires:	pkgconfig(libdrm) >= 2.4.65
 BuildRequires:	pkgconfig(libdrm_amdgpu) >= 2.4.65
 BuildRequires:	pkgconfig(xorg-macros) >= 1.19
 BuildRequires:	pkgconfig(xextproto) >= 7.3.0
-BuildRequires:	pkgconfig(xorg-server) >= 1.18
+BuildRequires:	pkgconfig(xorg-server) >= 1.19.6
 BuildRequires:	pkgconfig(gbm)
 BuildRequires:	pkgconfig(libudev)
 BuildRequires:	x11-proto-devel >= 7.7
