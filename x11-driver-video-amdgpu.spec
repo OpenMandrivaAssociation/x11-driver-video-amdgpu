@@ -1,6 +1,6 @@
 Summary:	X.org driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
-Version:	1.4.0
+Version:	18.0.0
 Release:	1
 Group:		System/X11
 License:	MIT
