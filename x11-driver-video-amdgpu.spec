@@ -1,6 +1,6 @@
 Summary:	X.org driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
-Version:	18.0.1
+Version:	18.1.0
 Release:	1
 Group:		System/X11
 License:	MIT
@@ -28,10 +28,10 @@ x11-driver-video-amdgpu is the X.org driver for AMD Technologies.
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_libdir}/xorg/modules/drivers/amdgpu_drv.so
