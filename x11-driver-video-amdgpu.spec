@@ -6,6 +6,10 @@ Group:		System/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-amdgpu-%{version}.tar.bz2
+# upstream patches
+Patch0:   Retry-get_fb_ptr-in-get_fb.patch
+Patch1:   dri3-Always-flush-glamor-before-sharing-pixmap-stora.patch
+
 BuildRequires:	pkgconfig(libdrm) >= 2.4.65
 BuildRequires:	pkgconfig(libdrm_amdgpu) >= 2.4.65
 BuildRequires:	pkgconfig(xorg-macros) >= 1.19
@@ -25,6 +29,7 @@ x11-driver-video-amdgpu is the X.org driver for AMD Technologies.
 %prep
 %setup -qn xf86-video-amdgpu-%{version}
 [ -e autogen.sh ] && ./autogen.sh || :
+%autopatch -p1
 
 %build
 %configure
