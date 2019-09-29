@@ -44,8 +44,8 @@ x11-driver-video-amdgpu is the X.org driver for AMD Technologies.
 %install
 %make_install
 
-mkdir -p %{buildroot}%{_sysconfdir}
-install -m755 %{SOURCE1} %{buildroot}%{_sysconfdir}/profile.d/%{SOURCE1}
+mkdir -p %{buildroot}%{_sysconfdir}/profile.d
+install -D -m755 %{SOURCE1} %{buildroot}%{_sysconfdir}/profile.d/
 
 %files
 %{_sysconfdir}/profile.d/*
