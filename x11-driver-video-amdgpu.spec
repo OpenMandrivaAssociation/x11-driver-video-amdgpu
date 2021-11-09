@@ -1,12 +1,12 @@
 Summary:	X.org driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
 Version:	21.0.0
-Release:	2
+Release:	3
 Group:		System/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-amdgpu-%{version}.tar.bz2
-
+Patch0:		0001-glamor-Set-AMDGPU_CREATE_PIXMAP_SCANOUT-on-DRI2-and-.patch
 BuildRequires:	pkgconfig(libdrm) >= 2.4.65
 BuildRequires:	pkgconfig(libdrm_amdgpu) >= 2.4.65
 BuildRequires:	pkgconfig(xorg-macros) >= 1.19
@@ -37,4 +37,4 @@ x11-driver-video-amdgpu is the X.org driver for AMD Technologies.
 %files
 %{_libdir}/xorg/modules/drivers/amdgpu_drv.so
 %{_datadir}/X11/xorg.conf.d/10-amdgpu.conf
-%{_mandir}/man4/amdgpu.4.*
+%doc %{_mandir}/man4/amdgpu.4.*
