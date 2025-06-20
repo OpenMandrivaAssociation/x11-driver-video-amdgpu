@@ -1,8 +1,8 @@
 %define _disable_ld_no_undefined 1
 Summary:	X.org driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
-Version:	23.0.1~20250613
-Release:	2
+Version:	23.0.1~20250620
+Release:	1
 Group:		System/X11
 License:	MIT
 URL:		https://xorg.freedesktop.org
