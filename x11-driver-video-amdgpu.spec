@@ -1,12 +1,12 @@
 %define _disable_ld_no_undefined 1
 Summary:	X.org driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
-Version:	23.0.1~20250620
+Version:	23.0.0.2
 Release:	1
 Group:		System/X11
 License:	MIT
 URL:		https://xorg.freedesktop.org
-Source0:	https://github.com/X11Libre/xf86-video-amdgpu/archive/refs/heads/master.tar.gz#/xf86-video-amdgpu-%{version}.tar.gz
+Source0:	https://github.com/X11Libre/xf86-video-amdgpu/archive/%{version}/xlibre-xf86-video-amdgpu-%{version}.tar.gz
 BuildRequires:	pkgconfig(libdrm) >= 2.4.65
 BuildRequires:	pkgconfig(libdrm_amdgpu) >= 2.4.65
 BuildRequires:	pkgconfig(xorg-macros) >= 1.19
@@ -24,7 +24,7 @@ Requires:	%{_lib}dri-drivers-radeon
 x11-driver-video-amdgpu is the X.org driver for AMD Technologies.
 
 %prep
-%autosetup -n xf86-video-amdgpu-master -p1
+%autosetup -n xf86-video-amdgpu-xlibre-xf86-video-amdgpu-%{version} -p1
 [ -e autogen.sh ] && ./autogen.sh || :
 
 %build
