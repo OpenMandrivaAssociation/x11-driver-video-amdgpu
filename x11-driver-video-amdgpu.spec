@@ -6,7 +6,7 @@ Release:	1
 Group:		System/X11
 License:	MIT
 URL:		https://xorg.freedesktop.org
-Source0:	https://github.com/X11Libre/xf86-video-amdgpu/archive/%{version}/xlibre-xf86-video-amdgpu-%{version}.tar.gz
+Source0:	https://github.com/X11Libre/xf86-video-amdgpu/archive/%{version}/xf86-video-amdgpu-xlibre-xf86-video-amdgpu-%{version}.tar.gz
 BuildRequires:	pkgconfig(libdrm) >= 2.4.65
 BuildRequires:	pkgconfig(libdrm_amdgpu) >= 2.4.65
 BuildRequires:	pkgconfig(xorg-macros) >= 1.19
