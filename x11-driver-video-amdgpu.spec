@@ -18,8 +18,8 @@ BuildRequires:	pkgconfig(libudev)
 BuildRequires:	x11-proto-devel >= 7.7
 Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
 # (tpg) this is needed to get VDPAU works out of box
-Requires:	%{_lib}vdpau-driver-radeonsi
-Requires:	%{_lib}dri-drivers-radeon
+Requires:	%{_lib}vdpau-drivers
+Requires:	%{_lib}dri-drivers
 
 %description
 x11-driver-video-amdgpu is the X.org driver for AMD Technologies.
