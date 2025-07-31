@@ -2,7 +2,7 @@
 %define abi 25.0
 Summary:	X.org driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
-Version:	23.0.0.2
+Version:	23.0.0.3
 Release:	1
 Group:		System/X11
 License:	MIT
