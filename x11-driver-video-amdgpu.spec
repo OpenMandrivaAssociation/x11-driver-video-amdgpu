@@ -2,12 +2,12 @@
 %define abi 25.0
 Summary:	X.org driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
-Version:	23.0.0.5
+Version:	23.0.0.6
 Release:	1
 Group:		System/X11
 License:	MIT
 URL:		https://xorg.freedesktop.org
-Source0:	https://github.com/X11Libre/xf86-video-amdgpu/archive/%{version}/xlibre-xf86-video-amdgpu-%{version}.tar.gz
+Source0:	https://github.com/X11Libre/xf86-video-amdgpu/archive/refs/tags/xlibre-xf86-video-amdgpu-%{version}.tar.gz
 BuildRequires:	pkgconfig(libdrm) >= 2.4.65
 BuildRequires:	pkgconfig(libdrm_amdgpu) >= 2.4.65
 BuildRequires:	pkgconfig(xorg-macros) >= 1.19
@@ -17,8 +17,6 @@ BuildRequires:	pkgconfig(gbm)
 BuildRequires:	pkgconfig(libudev)
 BuildRequires:	x11-proto-devel >= 7.7
 Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
-# (tpg) this is needed to get VDPAU works out of box
-Requires:	%{_lib}vdpau-drivers
 Requires:	%{_lib}dri-drivers
 
 %description
