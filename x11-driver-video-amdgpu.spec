@@ -2,7 +2,7 @@
 %define abi 25
 Summary:	X.org driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
-Version:	25.0.1
+Version:	25.0.2
 Release:	1
 Group:		System/X11
 License:	MIT
@@ -39,6 +39,6 @@ x11-driver-video-amdgpu is the X.org driver for AMD Technologies.
 %make_install
 
 %files
-%{_libdir}/xorg/modules/xlibre-%{abi}/drivers/amdgpu_drv.so
+%{_libdir}/xorg/modules/xlibre-%{abi}/drivers/video/amdgpu_drv.so
 %{_datadir}/X11/xorg.conf.d/10-amdgpu.conf
 %doc %{_mandir}/man4/amdgpu.4.*
