@@ -1,12 +1,12 @@
 %define _disable_ld_no_undefined 1
 %define abi 25
-Summary:	X.org driver for AMD Technologies
+Summary:	xlibre driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
-Version:	25.0.1
+Version:	25.1.0
 Release:	1
 Group:		System/X11
 License:	MIT
-URL:		https://xorg.freedesktop.org
+URL:		https://github.com/X11Libre
 Source0:	https://github.com/X11Libre/xf86-video-amdgpu/archive/refs/tags/xlibre-xf86-video-amdgpu-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -25,7 +25,7 @@ Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
 Requires:	%{_lib}dri-drivers
 
 %description
-x11-driver-video-amdgpu is the X.org driver for AMD Technologies.
+x11-driver-video-amdgpu is the xlibre driver for AMD Technologies.
 
 %prep
 %autosetup -n xf86-video-amdgpu-xlibre-xf86-video-amdgpu-%{version} -p1
@@ -39,6 +39,6 @@ x11-driver-video-amdgpu is the X.org driver for AMD Technologies.
 %make_install
 
 %files
-%{_libdir}/xorg/modules/xlibre-%{abi}/drivers/amdgpu_drv.so
+%{_libdir}/xorg/modules/xlibre-%{abi}/drivers/video/amdgpu_drv.so
 %{_datadir}/X11/xorg.conf.d/10-amdgpu.conf
 %doc %{_mandir}/man4/amdgpu.4.*
