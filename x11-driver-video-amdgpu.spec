@@ -2,7 +2,7 @@
 %define abi 25
 Summary:	xlibre driver for AMD Technologies
 Name:		x11-driver-video-amdgpu
-Version:	25.1.0
+Version:	25.1.1
 Release:	1
 Group:		System/X11
 License:	MIT
